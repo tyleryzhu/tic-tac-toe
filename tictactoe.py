@@ -186,7 +186,7 @@ class TicTacToeAI():
 
     def mainEventLoop(self, game):
         currentGame = game
-            self.display(currentGame)
+        self.display(currentGame)
         while not currentGame.endGame():
             if currentGame.piece == self.player:
                 self.makeMove(currentGame)
@@ -200,7 +200,7 @@ class TicTacToeAI():
             print("Congratulations to Player {} for winning!".format(winner))
 
 num = int(input("Welcome to Tic-Tac-Toe! Type in 1 to play a player and 2 to play the AI. "))
-while not c == 1 or c == 2:
+while not (num == 1 or num == 2):
      num = int(input("Try again. Type in 1 to play a player and 2 to play the AI. "))
 if num == 1:
     t = TicTacToe()

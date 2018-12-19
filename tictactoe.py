@@ -173,6 +173,8 @@ class TicTacToeAI():
         if game.endGame():
             return None, game.evaluatePosition()
         for action in game.movesLeft:
+            if bestScore == 1:
+                break
             newGame = Game(game.piece)
             newGame.board = copy.deepcopy(game.board)
             newGame.movesLeft = copy.deepcopy(game.movesLeft)

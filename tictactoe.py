@@ -65,8 +65,6 @@ class TicTacToe:
         winner = ((self.turn+1) % 2) + 1
         print("Congratulations to Player {} for winning!".format(winner))
 
-t = TicTacToe()
-
 class Game():
     def __init__(self, c = 'X'):
         self.board = [[' ', ' ', ' '],
